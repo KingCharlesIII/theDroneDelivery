@@ -1,9 +1,5 @@
 package com.example.ilp_submission_2.dto;
 
-
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Angle {
     private double angle;
 
