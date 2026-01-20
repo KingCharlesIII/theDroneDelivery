@@ -21,8 +21,6 @@ public class TheControllersTest {
     @Autowired
     private ObjectMapper objectMapper;
 
-    /* ---------------- /distanceTo ---------------- */
-
     @Test
     void distanceToValidRequestReturns200() throws Exception {
         String body = """
@@ -61,7 +59,6 @@ public class TheControllersTest {
                 .andExpect(status().isBadRequest());
     }
 
-    /* ---------------- /isCloseTo ---------------- */
 
     @Test
     void isCloseToReturnsTrueForClosePoints() throws Exception {
@@ -95,8 +92,6 @@ public class TheControllersTest {
                 .andExpect(content().string("false"));
     }
 
-    /* ---------------- /nextPosition ---------------- */
-
     @Test
     void nextPositionValidRequestReturns200() throws Exception {
         String body = """
@@ -126,8 +121,6 @@ public class TheControllersTest {
                         .content(body))
                 .andExpect(status().isBadRequest());
     }
-
-    /* ---------------- /isInRegion ---------------- */
 
     @Test
     void isInRegionValidClosedRegionReturns200() throws Exception {
